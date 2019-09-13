@@ -1,0 +1,977 @@
+<html lang="en">
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>NY Times</title>
+
+    <link rel="icon" type="image/png" href="img/NYTLogo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/screen.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div class="col-md-12 flex p0 nav-hold " style="z-index: 2;">
+            <div class="col-md-12 p0 fadeDown dash-top-left">
+                <div class=" bg-left-top">
+                    <div class="row white py-sec-3 flex ny-nav-hold">
+                        <ul class="flex ny-nav">
+                            <li class="text-left mobile-show a-self-center" style="z-index: 2;">
+                                <input type="checkbox" id="check" />
+                                    <label for="check"><svg viewBox="0 0 30 30" width="30" height="30">
+                                        <path id="one" d="M4 10h22M4" stroke="#fff" stroke-width="2" stroke-linecap="round"></path><path id="two" d="M4 20h22M4" stroke="#fff" stroke-width="2" stroke-linecap="round"></path></svg> 
+                                        </label>
+                                <aside>
+                                    <div class="top">
+                                        <h2 class="center">Main Menu</h2>
+                                        <ul>
+                                            <li class=""><a href="#"><img class="img-small" src="img/FurFashion.jpeg" alt=""> Profile</a></li><br>
+                                            <li class="flex">
+                                                <a href="#" class="flex">
+                                                    <div class="col-md-2 p0">
+                                                        <img class="img-small" src="img/newspaper.png"> 
+                                                    </div>
+                                                </a> 
+                                                <a href="#">
+                                                    <div class="col-md-12 ">
+                                                        <p class="m0 text-left"><b>Subscribe</b></p> 
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li><a href="#"><i class="fas fa-newspaper"></i>Today's Paper</a></li>
+                                            <li><a href="#"><i class="fas fa-video"></i>Video</a></li>
+                                            <li ><a href="#"><i class="fas fa-snowplow"></i>25 F</a></li>
+                                            <li><a href="#"><i class="fas fa-water"></i>Nikkel</a></li>
+                                        </ul>
+                                    </div>
+                                </aside></li>
+                            <li class="text-left a-self-center" style="z-index: 2;">
+                                <!-- <i class="fas fa-search"></i> -->
+
+                                <div id="morphsearch" class="morphsearch">
+                                    <form class="morphsearch-form">
+                                        <input class="morphsearch-input" type="search" placeholder="Search..."/>
+                                        <button class="morphsearch-submit" type="submit">Search</button>
+                                    </form>
+                                    <div class="morphsearch-content">
+                                        <div class="search-column">
+                                            <h2>Authors</h2>
+                                            <a class="search-media-object" href="#">
+                                                <img class="round" src="img/author1.png" alt="Aaron Stamos"/>
+                                                <h3>Aaron Stamos</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img class="round" src="img/author2.png" alt="Jean Smith"/>
+                                                <h3>Jean Smith</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img class="round" src="img/author3.png" alt="Jannis Finlan"/>
+                                                <h3>Jannis Finlan</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img class="round" src="img/author4.png" alt="Patricia Cox"/>
+                                                <h3>Patricia Cox</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img class="round" src="img/author5.png" alt="Demetria Holman"/>
+                                                <h3>Demetria Holman</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img class="round" src="img/author6.png" alt="Sean Dona"/>
+                                                <h3>Sean Dona</h3>
+                                            </a>
+                                        </div>
+                                        <div class="search-column">
+                                            <h2>Popular</h2>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/womanPoint.jpg" alt="Jane Leadby Interview"/>
+                                                <h3>Jane Leadby Interview</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/blonde.jpeg" alt="Photohgraphy Tips"/>
+                                                <h3>Photohgraphy Tips</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/manRun.jpeg" alt="Fitness Tips"/>
+                                                <h3>Fitness Tips</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/mask.jpeg" alt="Theater Shows"/>
+                                                <h3>Theater Shows</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/rome.jpeg" alt="Travel Photos"/>
+                                                <h3>Travel Photos</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/water.jpeg" alt="Marine Life"/>
+                                                <h3>Marine Life</h3>
+                                            </a>
+                                        </div>
+                                        <div class="search-column">
+                                            <h2>Recent</h2>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/umbrella.jpeg" alt="Fall Fashion"/>
+                                                <h3>Fall Fashion</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/float.jpeg" alt="Space Exhibit"/>
+                                                <h3>Space Exhibit</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/fan.jpeg" alt="Professional"/>
+                                                <h3>Professional</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/cat.jpeg" alt="Pet Ideas"/>
+                                                <h3>Pet Ideas</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/bighat.jpeg" alt="Summer Fashion"/>
+                                                <h3>Summer Fashion</h3>
+                                            </a>
+                                            <a class="search-media-object" href="#">
+                                                <img src="img/womanExtendedHand.jpeg" alt="Journalism"/>
+                                                <h3>Journalism</h3>
+                                            </a>
+                                        </div>
+                                    </div><!-- /morphsearch-content -->
+                                    <span class="morphsearch-close"></span>
+                                </div><!-- /morphsearch -->
+                            </li>
+                            <li class="a-self-center desktop-show"><a href="#"><i class="fas fa-newspaper"></i>Today's Paper</a></li>
+                            <li class="a-self-center desktop-show"><a href="#"><i class="fas fa-video"></i>Video</a></li>
+                            <li class="a-self-center"><a href="#"><h1 class="large-titles center flex nytimes-header">
+                                    <div>T</div><div>h</div><div>e</div>&nbsp;
+                                    <div>N</div><div>e</div><div>w</div>&nbsp;
+                                    <div>Y</div><div>o</div><div>r</div><div>k</div>&nbsp;
+                                    <div>T</div><div>i</div><div>m</div><div>e</div><div>s</div>
+                                </h1></a>
+                            </li>
+                            <li class="a-self-center desktop-show"><a href="#"><i class="fas fa-snowplow"></i>25 F</a></li>
+                            <li class="a-self-center desktop-show"><a href="#"><i class="fas fa-water"></i>Nikkel</a></li>
+                            <li class="flex a-self-center desktop-show">
+                                <a href="#" class="flex">
+                                    <div class="col-md-2 p0">
+                                        <img class="img-small" src="img/newspaper.png"> 
+                                    </div>
+                                </a> 
+                                <a href="#">
+                                    <div class="col-md-12 ">
+                                        <p class="m0 text-left"><b>Subscribe</b></p> 
+                                        <p class="grey-light sub-promo">Web | Phone <span class="white">$0.99</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=" desktop-show"><a href="#"><img class="img-small" src="img/FurFashion.jpeg" alt=""></a></li>
+                            <!-- <li class=""><a href="#">Picture</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 fadeDown py-sec-3 secondary-nav ny-sub-nav-hold" id="mobile-sub-nav" style="z-index: 1; background: #000;">
+            <ul class="flex ny-nav ny-sub-nav">
+                <li class="mobile-show"><a href="#" id="mobile-sub-nav-toggle">Menu</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">U.S.</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">N.Y.</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Opinion</a></li>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Arts</a></li>
+                <li><a href="#">Style</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Magazine</a></li>
+                <li><a href="#">T Magazine</a></li>
+                <li><a href="#">Real Estate</a></li>
+                <li><a href="#">All</a></li>
+            </ul>
+            <hr>
+        </div>
+
+
+        <div class="cd-slider">
+            <ul>
+                <li class="slide-list">
+                    <div class="ov slide-image">
+                        <div class="video-container">
+                            <video autoplay="" loop="" muted="" class="video-bg">
+                                <source src="video/businessMan.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>     
+                    <div class="content-hold col-md-12 flex slide-move-right">
+                        <div class="col-md-3 left fadeUp py-sec-3 white bg-faded-black slide-move-left main-title-hold">
+                            <div class="article-number fadeUp">
+                                <h3 class="flex">
+                                    <div>1</div>
+                                    <span class="small light-gold flex"><div>/</div><div>4</div></span>
+                                </h3>
+                            </div> 
+                            <div class="article-type flex py-sec-3 fadeUp">
+                                <a href="#" class="main-type">
+                                    <h3 class="flex">
+                                        <div>B</div><div>u</div><div>s</div><div>i</div><div>n</div><div>e</div><div>s</div><div>s</div>
+                                    </h3>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a href="#" class="sub-type">
+                                    <h3 class="light-gold flex">
+                                        <div>T</div><div>e</div><div>c</div><div>h</div><div>n</div><div>o</div><div>l</div><div>o</div><div>g</div><div>y</div>
+                                    </h3>
+                                </a>
+                            </div>
+                            <div class="article-titles py-sec-3 fadeUp">
+                                <div class="main-title gold ">
+                                    <h1 class="flex">
+                                        <div>E</div><div>l</div><div>o</div><div>n</div>&nbsp;
+                                        <div>M</div><div>u</div><div>s</div><div>k</div>
+                                    </h2>
+                                </div>
+                                <div class="secondary-title grey-light">
+                                    <h2>And Jeff Bezos Share Their Secrets To Massive Success</h2>
+                                </div>
+                                <br>
+                                <h3><a href="#" class="read-more fadeUp light-gold ">Read Article</a></h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 placebo-2"></div>
+                        
+                        <div class="col-md-4 fadeUp py-sec-3 white bg-faded-black slide-move-down main-story">
+                            <p class="flex fadeUp">
+                                <span class="first-letter flex">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat diam in vehicula aliquam. Etiam aliquam egestas eros, a posuere dolor facilisis eu. Donec aliquam neque ac neque ultricies pharetra id non tortor. Nulla pharetra sollicitudin fermentum. Morbi aliquet nisi vehicula, molestie magna in, feugiat neque. Fusce interdum laoreet purus non blandit. Aenean imperdiet a nisl vel laoreet. Vivamus luctus fringilla quam, eget congue mi dictum eget. Duis sit amet pellentesque nulla, ut congue tortor. Nam sit amet magna in enim feugiat scelerisque. Pellentesque sagittis bibendum malesuada. Aliquam pretium metus mauris. Aliquam erat volutpat. Duis at velit laoreet, pretium neque nec, tempor velit.
+                            </p>
+                            <p class=" fadeUp">
+                                Cras id luctus dolor. Vivamus dignissim, erat eu ullamcorper vestibulum, sem odio vestibulum massa, ut sodales ipsum turpis id risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Morbi libero felis, sagittis vel felis at, hendrerit feugiat metus. Duis aliquet, lectus a laoreet pulvinar, tortor diam vehicula neque, quis viverra sapien orci in nunc. Quisque sed lorem eleifend, iaculis leo in, pellentesque velit. Morbi dignissim tellus id purus ultrices tincidunt. Integer lacus risus, lobortis ut purus eu, consectetur vestibulum dolor. Etiam nec blandit urna. Mauris ligula eros, tristique sit amet tristique ut, posuere in lectus.            
+                            </p>
+                            <a href="#" class="read-more fadeUp light-gold ">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 flex bottom-hold " style="z-index: 1;">
+                        <div class="col-md-4 fadeUp p0 white flex placebo-replace">
+                                <div class="col-md-6 bg-faded-black slide-move-right py-sec-3">
+                                    <div class="article-type flex py-sec-3 fadeUp">
+                                        <a href="#" class="main-type">
+                                            <h5 class="flex">
+                                                <div>M</div><div>o</div><div>n</div><div>e</div><div>y</div>
+                                            </h5>
+                                        </a>&nbsp;&nbsp;&nbsp;
+                                        <a href="#" class="sub-type">
+                                            <h5 class="light-gold flex">
+                                                <div>B</div><div>u</div><div>s</div><div>i</div><div>n</div><div>e</div><div>s</div><div>s</div>
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="article-titles fadeUp">
+                                        <div class="main-title gold ">
+                                            <h4 class="flex">
+                                                <div>S</div><div>t</div><div>o</div><div>c</div><div>k</div>&nbsp;
+                                                <div>M</div><div>a</div><div>r</div><div>k</div><div>e</div><div>t</div>
+                                            </h4>
+                                        </div>
+                                        <div class="secondary-title grey-light">
+                                            <h5>NASDAQ Falls, Avoid Losing Your Money With This Expert Advice</h5>
+                                        </div>
+                                    </div>
+                                </div>          
+    
+                                <div class="col-md-6 bg-faded-black slide-move-right py-sec-3">
+                                    <div class="article-type flex py-sec-3 fadeUp">
+                                        <a href="#" class="main-type">
+                                            <h5 class="flex">
+                                                <div>M</div><div>u</div><div>s</div><div>i</div><div>c</div>
+                                            </h5>
+                                        </a>&nbsp;&nbsp;&nbsp;
+                                        <a href="#" class="sub-type">
+                                            <h5 class="light-gold flex">
+                                                <div>E</div><div>n</div><div>t</div><div>e</div><div>r</div><div>t</div><div>a</div><div>n</div><div>m</div><div>e</div><div>n</div><div>t</div>
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="article-titles fadeUp">
+                                        <div class="main-title gold ">
+                                            <h4 class="flex">
+                                                <div>N</div><div>i</div><div>k</div><div>k</div><div>i</div>&nbsp;
+                                                <div>M</div><div>i</div><div>n</div><div>a</div><div>j</div>
+                                            </h4>
+                                        </div>
+                                        <div class="secondary-title grey-light">
+                                            <h5>Announces Her Retirement From The Music Industry</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-md-12 p0 bottom-hold-2">   
+                        <div class="flex">
+                            <div class="col-md-6 placebo"></div> 
+                            <div class="col-md-6 placebo-replace p0">
+                                <div class="flex fadeUp articles-hold">
+                                    <div class="col-md-4 flex bottom-story slide-move-right">
+                                        <div class="col-md-12 bottom-art-7 shrink flex py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Outdoors</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 flex bottom-story slide-move-right">
+                                        <div class="col-md-12 bottom-art-8 shrink flex py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Nature</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 flex bottom-story slide-move-right">
+                                        <div class="col-md-12 bottom-art-9 shrink flex py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Marine Life</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="col-md-6 placebo"></div>
+                            <div class="col-md-6 fadeUp py-sec-3 white bottom-articles-hold placebo-replace" style="padding-bottom: 0 !important; z-index: 2;">
+                                <div class="flex bg-white py-sec-3 black bottom-story-hold fadeUp stories-hold">
+                                    <div class="col-md-4 flex bottom-article slide-move-left">
+                                            <div class="col-md-3 p0">
+                                                <a href="#">
+                                                    <img class="img-small shrink flex" src="img/womanPoint.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 p0 fadeUp">
+                                                <a href="#">
+                                                    <h4 class="grey">NEWS</h4>
+                                                </a>
+                                                <p>Actress Jane Leadby Opens Up.</p>
+                                            </div>
+                                    </div>
+
+                                    <div class="col-md-4 flex bottom-article slide-move-left">
+                                        <div class="col-md-3 p0">
+                                            <a href="#">
+                                                <img class="img-small shrink flex" src="img/feather.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-9 p0 fadeUp">
+                                            <a href="#">
+                                                <h4 class="grey">NATURE</h4>
+                                            </a>
+                                            <p>Why So Many Birds Have Gone Missing.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 flex bottom-article slide-move-left">
+                                        <div class="col-md-3 p0">
+                                            <a href="#">
+                                                <img class="img-small shrink flex" src="img/womanGround.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-9 p0 fadeUp">
+                                            <a href="#">
+                                                <h4 class="grey">TRAVEL</h4>
+                                            </a>
+                                            <p>Head To The Pyramids! 10 Trips To Take This Year.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="slide-list">
+                    <div class="ov slide-image">
+                        <div class="video-container">
+                            <video autoplay="" loop="" muted="" class="video-bg">
+                                <source src="video/coffee.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>     
+                    <div class="content-hold col-md-12 flex slide-move-right">
+                        <div class="col-md-3 left fadeUp py-sec-3 white bg-faded-black slide-move-left main-title-hold">
+                            <div class="article-number fadeUp">
+                                <h3 class="flex">
+                                    <div>2</div>
+                                    <span class="small light-gold flex"><div>/</div><div>4</div></span>
+                                </h3>
+                            </div> 
+                            <div class="article-type flex py-sec-3 fadeUp">
+                                <a href="#" class="main-type">
+                                    <h3 class="flex">
+                                        <div>B</div><div>u</div><div>s</div><div>i</div><div>n</div><div>e</div><div>s</div><div>s</div>
+                                    </h3>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a href="#" class="sub-type">
+                                    <h3 class="light-gold flex">
+                                        <div>F</div><div>o</div><div>o</div><div>d</div>
+                                    </h3>
+                                </a>
+                            </div>
+                            <div class="article-titles py-sec-3 fadeUp">
+                                <div class="main-title gold ">
+                                    <h1 class="flex">
+                                        <div>S</div><div>t</div><div>a</div><div>r</div>&nbsp;
+                                        <div>B</div><div>u</div><div>c</div><div>k</div><div>s</div>
+                                    </h2>
+                                </div>
+                                <div class="secondary-title grey-light">
+                                    <h2>Opens Their Largest Location Ever In Chicago This November</h2>
+                                </div>
+                                <br>
+                                <h3><a href="#" class="read-more fadeUp light-gold ">Read Article</a></h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 placebo-2"></div>
+                        
+                        <div class="col-md-4 fadeUp py-sec-3 white bg-faded-black slide-move-down main-story">
+                            <p class="flex fadeUp">
+                                <span class="first-letter flex">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat diam in vehicula aliquam. Etiam aliquam egestas eros, a posuere dolor facilisis eu. Donec aliquam neque ac neque ultricies pharetra id non tortor. Nulla pharetra sollicitudin fermentum. Morbi aliquet nisi vehicula, molestie magna in, feugiat neque. Fusce interdum laoreet purus non blandit. Aenean imperdiet a nisl vel laoreet. Vivamus luctus fringilla quam, eget congue mi dictum eget. Duis sit amet pellentesque nulla, ut congue tortor. Nam sit amet magna in enim feugiat scelerisque. Pellentesque sagittis bibendum malesuada. Aliquam pretium metus mauris. Aliquam erat volutpat. Duis at velit laoreet, pretium neque nec, tempor velit.
+                            </p>
+                            <p class=" fadeUp">
+                                Cras id luctus dolor. Vivamus dignissim, erat eu ullamcorper vestibulum, sem odio vestibulum massa, ut sodales ipsum turpis id risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Morbi libero felis, sagittis vel felis at, hendrerit feugiat metus. Duis aliquet, lectus a laoreet pulvinar, tortor diam vehicula neque, quis viverra sapien orci in nunc. Quisque sed lorem eleifend, iaculis leo in, pellentesque velit. Morbi dignissim tellus id purus ultrices tincidunt. Integer lacus risus, lobortis ut purus eu, consectetur vestibulum dolor. Etiam nec blandit urna. Mauris ligula eros, tristique sit amet tristique ut, posuere in lectus.            
+                            </p>
+                            <a href="#" class="read-more fadeUp light-gold ">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 flex bottom-hold " style="z-index: 1;">
+                        <div class="col-md-4 fadeUp p0 white flex placebo-replace">
+                            <div class="col-md-6 bg-faded-black slide-move-right py-sec-3">
+                                <div class="article-type flex py-sec-3 fadeUp">
+                                    <a href="#" class="main-type">
+                                        <h5 class="flex">
+                                            <div>B</div><div>e</div><div>a</div><div>u</div><div>t</div><div>y</div>
+                                        </h5>
+                                    </a>&nbsp;&nbsp;&nbsp;
+                                    <a href="#" class="sub-type">
+                                        <h5 class="light-gold flex">
+                                            <div>G</div><div>a</div><div>l</div><div>l</div><div>e</div><div>r</div><div>y</div>
+                                        </h5>
+                                    </a>
+                                </div>
+                                <div class="article-titles fadeUp">
+                                    <div class="main-title gold ">
+                                        <h4 class="flex">
+                                            <div>C</div><div>a</div><div>r</div><div>a</div>&nbsp;
+                                            <div>J</div><div>o</div><div>n</div><div>e</div><div>s</div>
+                                        </h4>
+                                    </div>
+                                    <div class="secondary-title grey-light">
+                                        <h5>This Is Clearly The Style Of The Summer</h5>
+                                    </div>
+                                </div>
+                            </div>          
+
+                            <div class="col-md-6 bg-faded-black slide-move-right py-sec-3 slide-move-right">
+                                <div class="article-type flex py-sec-3 fadeUp">
+                                    <a href="#" class="main-type">
+                                        <h5 class="flex">
+                                            <div>N</div><div>e</div><div>w</div><div>s</div>
+                                        </h5>
+                                    </a>&nbsp;&nbsp;&nbsp;
+                                    <a href="#" class="sub-type">
+                                        <h5 class="light-gold flex">
+                                            <div>S</div><div>c</div><div>i</div><div>e</div><div>n</div><div>c</div><div>e</div>
+                                        </h5>
+                                    </a>
+                                </div>
+                                <div class="article-titles fadeUp">
+                                    <div class="main-title gold ">
+                                        <h4 class="flex">
+                                            <div>N</div><div>A</div><div>S</div><div>A</div>
+                                        </h4>
+                                    </div>
+                                    <div class="secondary-title grey-light">
+                                        <h5>Engineers are saying a 2022 Trip To The Moon Is In The Works</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 p0 bottom-hold-2">   
+                        <div class="flex">
+                            <div class="col-md-6 placebo"></div> 
+                            <div class="col-md-6 placebo-replace p0">
+                                <div class="flex fadeUp articles-hold">
+                                    <div class="col-md-4 flex bottom-story slide-move-right">
+                                        <div class="col-md-12 bottom-art-1 shrink slide-move-right py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Fun</h4>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4 flex bottom-story slide-move-right">
+                                        <div class="col-md-12 bottom-art-2 shrink slide-move-right py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Fashion</h4>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4 flex bottom-story slide-move-right ">
+                                        <div class="col-md-12 bottom-art-3 shrink flex py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Travel</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="col-md-6 placebo"></div>
+                            <div class="col-md-6 fadeUp py-sec-3 white bottom-articles-hold placebo-replace" style="padding-bottom: 0 !important; z-index: 2;">
+                                <div class="flex bg-white py-sec-3 black bottom-story-hold fadeUp stories-hold">
+                                        <div class="col-md-4 flex bottom-article slide-move-left">
+                                            <div class="col-md-3 p0">
+                                                <a href="#">
+                                                    <img class="img-small shrink flex" src="img/womanExtendedHand.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 p0 fadeUp">
+                                                <a href="#">
+                                                    <h4 class="grey">NEWS</h4>
+                                                </a>
+                                                <p>Journalist Natalie Greene Shares her story.</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-md-4 flex bottom-article slide-move-left">
+                                            <div class="col-md-3 p0">
+                                                <a href="#">
+                                                    <img class="img-small shrink flex" src="img/FaceWithMark.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 p0 fadeUp">
+                                                <a href="#">
+                                                    <h4 class="grey">ART</h4>
+                                                </a>
+                                                <p>Charlotte's Anual Art Expo Opens December 12<sup>th</sup> 2019.</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-md-4 flex bottom-article slide-move-left">
+                                            <div class="col-md-3 p0">
+                                                <a href="#">
+                                                    <img class="img-small shrink flex" src="img/BitingLip.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-9 p0 fadeUp">
+                                                <a href="#">
+                                                    <h4 class="grey">MUSIC</h4>
+                                                </a>
+                                                <p>Singer Aealla Brown To Release Her 4<sup>th</sup> Studio Album This Friday.</p>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="slide-list">
+                    <div class="ov slide-image">
+                        <div class="video-container">
+                            <video autoplay="" loop="" muted="" class="video-bg">
+                                <source src="video/crowd.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>     
+                    <div class="content-hold col-md-12 flex slide-move-right">
+                        <div class="col-md-3 left fadeUp py-sec-3 white bg-faded-black slide-move-left main-title-hold">
+                            <div class="article-number fadeUp">
+                                <h3 class="flex">
+                                    <div>3</div>
+                                    <span class="small light-gold flex"><div>/</div><div>4</div></span>
+                                </h3>
+                            </div> 
+                            <div class="article-type flex py-sec-3 fadeUp">
+                                <a href="#" class="main-type">
+                                    <h3 class="flex">
+                                        <div>T</div><div>e</div><div>c</div><div>h</div><div>n</div><div>o</div><div>l</div><div>o</div><div>g</div><div>y</div>
+                                    </h3>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a href="#" class="sub-type">
+                                    <h3 class="light-gold flex">
+                                        <div>H</div><div>i</div><div>s</div><div>t</div><div>o</div><div>r</div><div>y</div>
+                                    </h3>
+                                </a>
+                            </div>
+                            <div class="article-titles py-sec-3 fadeUp">
+                                <div class="main-title gold ">
+                                    <h1 class="flex">
+                                        <div>A</div><div>p</div><div>p</div><div>l</div><div>e</div>&nbsp;
+                                        <div>C</div><div>E</div><div>O</div>
+                                    </h2>
+                                </div>
+                                <div class="secondary-title grey-light">
+                                    <h2>Tim Cook Loves These Mumbai Photos, Check Them Out Here</h2>
+                                </div>
+                                <br>
+                                <h3><a href="#" class="read-more fadeUp light-gold ">Read Article</a></h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 placebo-2"></div>
+                        
+                        <div class="col-md-4 fadeUp py-sec-3 white bg-faded-black slide-move-down main-story">
+                            <p class="flex fadeUp">
+                                <span class="first-letter flex">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat diam in vehicula aliquam. Etiam aliquam egestas eros, a posuere dolor facilisis eu. Donec aliquam neque ac neque ultricies pharetra id non tortor. Nulla pharetra sollicitudin fermentum. Morbi aliquet nisi vehicula, molestie magna in, feugiat neque. Fusce interdum laoreet purus non blandit. Aenean imperdiet a nisl vel laoreet. Vivamus luctus fringilla quam, eget congue mi dictum eget. Duis sit amet pellentesque nulla, ut congue tortor. Nam sit amet magna in enim feugiat scelerisque. Pellentesque sagittis bibendum malesuada. Aliquam pretium metus mauris. Aliquam erat volutpat. Duis at velit laoreet, pretium neque nec, tempor velit.
+                            </p>
+                            <p class=" fadeUp">
+                                Cras id luctus dolor. Vivamus dignissim, erat eu ullamcorper vestibulum, sem odio vestibulum massa, ut sodales ipsum turpis id risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Morbi libero felis, sagittis vel felis at, hendrerit feugiat metus. Duis aliquet, lectus a laoreet pulvinar, tortor diam vehicula neque, quis viverra sapien orci in nunc. Quisque sed lorem eleifend, iaculis leo in, pellentesque velit. Morbi dignissim tellus id purus ultrices tincidunt. Integer lacus risus, lobortis ut purus eu, consectetur vestibulum dolor. Etiam nec blandit urna. Mauris ligula eros, tristique sit amet tristique ut, posuere in lectus.            
+                            </p>
+                            <a href="#" class="read-more fadeUp light-gold ">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 flex bottom-hold " style="z-index: 1;">
+                        <div class="col-md-4 fadeUp p0 white flex placebo-replace">
+                            <div class="col-md-6 bg-faded-black slide-move-right py-sec-3">
+                                <div class="article-type flex py-sec-3 fadeUp">
+                                    <a href="#" class="main-type">
+                                        <h5 class="flex">
+                                            <div>T</div><div>e</div><div>c</div><div>h</div><div>n</div><div>o</div><div>l</div><div>o</div><div>g</div><div>y</div>
+                                        </h5>
+                                    </a>&nbsp;&nbsp;&nbsp;
+                                    <a href="#" class="sub-type">
+                                        <h5 class="light-gold flex">
+                                            <div>E</div><div>n</div><div>t</div><div>e</div><div>r</div><div>t</div><div>a</div><div>n</div><div>m</div><div>e</div><div>n</div><div>t</div>
+                                        </h5>
+                                    </a>
+                                </div>
+                                <div class="article-titles fadeUp">
+                                    <div class="main-title gold ">
+                                        <h4 class="flex">
+                                            <div>I</div><div>p</div><div>h</div><div>o</div><div>n</div><div>e</div>&nbsp;
+                                            <div>1</div><div>1</div>
+                                        </h4>
+                                    </div>
+                                    <div class="secondary-title grey-light">
+                                        <h5>Apple Releases The 11<sup>th</sup> Version Of Their Signature Phone</h5>
+                                    </div>
+                                </div>
+                            </div>          
+
+                            <div class="col-md-6 bg-faded-black slide-move-right py-sec-3">
+                                <div class="article-type flex py-sec-3 fadeUp">
+                                    <a href="#" class="main-type">
+                                        <h5 class="flex">
+                                            <div>E</div><div>n</div><div>t</div><div>e</div><div>r</div><div>t</div><div>a</div><div>i</div><div>n</div><div>m</div><div>e</div><div>n</div><div>t</div>
+                                        </h5>
+                                    </a>&nbsp;&nbsp;&nbsp;
+                                    <a href="#" class="sub-type">
+                                        <h5 class="light-gold flex">
+                                            <div>B</div><div>u</div><div>s</div><div>i</div><div>n</div><div>e</div><div>s</div><div>s</div>
+                                        </h5>
+                                    </a>
+                                </div>
+                                <div class="article-titles fadeUp">
+                                    <div class="main-title gold ">
+                                        <h4 class="flex">
+                                            <div>B</div><div>e</div><div>n</div><div>e</div><div>d</div><div>i</div><div>c</div><div>t</div>&nbsp;
+                                            <div>C</div><div>u</div><div>m</div><div>b</div><div>e</div><div>r</div><div>b</div><div>a</div><div>t</div><div>c</div><div>h</div>
+                                        </h4>
+                                    </div>
+                                    <div class="secondary-title grey-light">
+                                        <h5>Sherlock Possible 2020 Season 5 Release Date</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 p0 bottom-hold-2">   
+                        <div class="flex">
+                            <div class="col-md-6 placebo"></div> 
+                            <div class="col-md-6 placebo-replace p0">
+                                <div class="flex fadeUp articles-hold">
+                                    <div class="col-md-4 flex bottom-story slide-move-right">
+                                        <div class="col-md-12 bottom-art-4 shrink flex py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Creative</h4>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4 flex bottom-story slide-move-right">
+                                        <div class="col-md-12 bottom-art-5 shrink flex py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Hotels</h4>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4 flex bottom-story slide-move-right">
+                                        <div class="col-md-12 bottom-art-6 shrink flex py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Trends</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="col-md-6 placebo"></div>
+                            <div class="col-md-6 fadeUp py-sec-3 white bottom-articles-hold placebo-replace" style="padding-bottom: 0 !important; z-index: 2;">
+                                <div class="flex bg-white py-sec-3 black bottom-story-hold fadeUp stories-hold">
+                                    <div class="col-md-4 flex bottom-article slide-move-left">
+                                        <div class="col-md-3 p0">
+                                            <a href="#">
+                                                <img class="img-small shrink flex" src="img/umbrella.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-9 p0 fadeUp">
+                                            <a href="#">
+                                                <h4 class="grey">FASHION</h4>
+                                            </a>
+                                            <p>Discover Upcoming Fall Fashion Trends.</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4 flex bottom-article slide-move-left">
+                                        <div class="col-md-3 p0">
+                                            <a href="#">
+                                                <img class="img-small shrink flex" src="img/manDrone.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-9 p0 fadeUp">
+                                            <a href="#">
+                                                <h4 class="grey">TECH</h4>
+                                            </a>
+                                            <p>Aeryon Shows Off Their Newest Drone Model. Available Now!</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4 flex bottom-article slide-move-left">
+                                        <div class="col-md-3 p0">
+                                            <a href="#">
+                                                <img class="img-small shrink flex" src="img/bighat.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-9 p0 fadeUp">
+                                            <a href="#">
+                                                <h4 class="grey">TRAVEL</h4>
+                                            </a>
+                                            <p>Headed To The Beach? Be The Best Dressed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="slide-list">
+                    <div class="ov slide-image">
+                        <div class="video-container">
+                            <video autoplay="" loop="" muted="" class="video-bg">
+                                <source src="video/womanBarWalk.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>     
+                    <div class="content-hold col-md-12 flex slide-move-right">
+                        <div class="col-md-3 left fadeUp py-sec-3 white bg-faded-black slide-move-left main-title-hold">
+                            <div class="article-number fadeUp">
+                                <h3 class="flex">
+                                    <div>4</div>
+                                    <span class="small light-gold flex"><div>/</div><div>4</div></span>
+                                </h3>
+                            </div> 
+                            <div class="article-type flex py-sec-3 fadeUp">
+                                <a href="#" class="main-type">
+                                    <h3 class="flex">
+                                        <div>L</div><div>i</div><div>f</div><div>e</div>
+                                    </h3>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a href="#" class="sub-type">
+                                    <h3 class="light-gold flex">
+                                        <div>T</div><div>r</div><div>a</div><div>v</div><div>e</div><div>l</div>
+                                    </h3>
+                                </a>
+                            </div>
+                            <div class="article-titles py-sec-3 fadeUp">
+                                <div class="main-title gold ">
+                                    <h1 class="flex">
+                                        <div>L</div><div>u</div><div>x</div><div>u</div><div>r</div><div>y</div>&nbsp;
+                                        <div>R</div><div>e</div><div>s</div><div>o</div><div>r</div><div>t</div>
+                                    </h2>
+                                </div>
+                                <div class="secondary-title grey-light">
+                                    <h2>Breaks Records During Grand Opening With Simple Marketing Tactic</h2>
+                                </div>
+                                <br>
+                                <h3><a href="#" class="read-more fadeUp light-gold ">Read Article</a></h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 placebo-2"></div>
+                        
+                        <div class="col-md-4 fadeUp py-sec-3 white bg-faded-black slide-move-down main-story">
+                            <p class="flex fadeUp">
+                                <span class="first-letter flex">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat diam in vehicula aliquam. Etiam aliquam egestas eros, a posuere dolor facilisis eu. Donec aliquam neque ac neque ultricies pharetra id non tortor. Nulla pharetra sollicitudin fermentum. Morbi aliquet nisi vehicula, molestie magna in, feugiat neque. Fusce interdum laoreet purus non blandit. Aenean imperdiet a nisl vel laoreet. Vivamus luctus fringilla quam, eget congue mi dictum eget. Duis sit amet pellentesque nulla, ut congue tortor. Nam sit amet magna in enim feugiat scelerisque. Pellentesque sagittis bibendum malesuada. Aliquam pretium metus mauris. Aliquam erat volutpat. Duis at velit laoreet, pretium neque nec, tempor velit.
+                            </p>
+                            <p class=" fadeUp">
+                                Cras id luctus dolor. Vivamus dignissim, erat eu ullamcorper vestibulum, sem odio vestibulum massa, ut sodales ipsum turpis id risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Morbi libero felis, sagittis vel felis at, hendrerit feugiat metus. Duis aliquet, lectus a laoreet pulvinar, tortor diam vehicula neque, quis viverra sapien orci in nunc. Quisque sed lorem eleifend, iaculis leo in, pellentesque velit. Morbi dignissim tellus id purus ultrices tincidunt. Integer lacus risus, lobortis ut purus eu, consectetur vestibulum dolor. Etiam nec blandit urna. Mauris ligula eros, tristique sit amet tristique ut, posuere in lectus.            
+                            </p>
+                            <a href="#" class="read-more fadeUp light-gold ">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 flex bottom-hold " style="z-index: 1;">
+                        <div class="col-md-4 fadeUp p0 white flex placebo-replace">
+                            <div class="col-md-6 bg-faded-black slide-move-right py-sec-3">
+                                <div class="article-type flex py-sec-3 fadeUp">
+                                    <a href="#" class="main-type">
+                                        <h5 class="flex">
+                                            <div>A</div><div>r</div><div>t</div>
+                                        </h5>
+                                    </a>&nbsp;&nbsp;&nbsp;
+                                    <a href="#" class="sub-type">
+                                        <h5 class="light-gold flex">
+                                            <div>G</div><div>a</div><div>l</div><div>l</div><div>e</div><div>r</div><div>y</div>
+                                        </h5>
+                                    </a>
+                                </div>
+                                <div class="article-titles fadeUp">
+                                    <div class="main-title gold ">
+                                        <h4 class="flex">
+                                            <div>P</div><div>a</div><div>b</div><div>l</div><div>o</div>&nbsp;
+                                            <div>P</div><div>i</div><div>c</div><div>a</div><div>s</div><div>s</div><div>o</div>
+                                        </h4>
+                                    </div>
+                                    <div class="secondary-title grey-light">
+                                        <h5>More Paintings Found Made By The Legendary Artist</h5>
+                                    </div>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col-md-6 bg-faded-black slide-move-right py-sec-3">
+                            <div class="article-type flex py-sec-3 fadeUp">
+                                <a href="#" class="main-type">
+                                    <h5 class="flex">
+                                        <div>F</div><div>o</div><div>o</div><div>d</div>
+                                    </h5>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a href="#" class="sub-type">
+                                    <h5 class="light-gold flex">
+                                        <div>E</div><div>n</div><div>t</div><div>e</div><div>r</div><div>t</div><div>a</div><div>n</div><div>m</div><div>e</div><div>n</div><div>t</div>
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="article-titles fadeUp">
+                                <div class="main-title gold ">
+                                    <h4 class="flex">
+                                        <div>G</div><div>o</div><div>r</div><div>d</div><div>o</div><div>n</div>&nbsp;
+                                        <div>R</div><div>a</div><div>m</div><div>s</div><div>a</div><div>y</div>
+                                    </h4>
+                                </div>
+                                <div class="secondary-title grey-light">
+                                    <h5>Shares His Top 10 Recipies</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 p0 bottom-hold-2">   
+                        <div class="flex">
+                            <div class="col-md-6 placebo"></div> 
+                            <div class="col-md-6 placebo-replace p0">
+                                <div class="flex fadeUp articles-hold">
+                                    <div class="col-md-4 flex bottom-story slide-move-right ">
+                                        <div class="col-md-12 bottom-art-10 shrink flex py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Music</h4>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4 flex bottom-story slide-move-right">
+                                        <div class="col-md-12 bottom-art-11 shrink flex py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Skin Care</h4>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4 flex bottom-story slide-move-right">
+                                        <div class="col-md-12 py-sec-2 bottom-art-12 shrink flex py-sec-2">
+                                            <h4 class="center bottom-art-caption grey-light">Fitness</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="col-md-6 placebo"></div>
+                            <div class="col-md-6 fadeUp py-sec-3 white bottom-articles-hold placebo-replace" style="padding-bottom: 0 !important; z-index: 2;">
+                                <div class="flex bg-white py-sec-3 black bottom-story-hold fadeUp stories-hold">
+                                    <div class="col-md-4 flex bottom-article slide-move-left">
+                                        <div class="col-md-3 p0">
+                                            <a href="#">
+                                                <img class="img-small shrink flex" src="img/Proposal.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-9 p0 fadeUp">
+                                            <a href="#">
+                                                <h4 class="grey">LIFE</h4>
+                                            </a>
+                                            <p>Best Proposal Ideas From Romance Expert Shana Yates.</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4 flex bottom-article slide-move-left">
+                                        <div class="col-md-3 p0">
+                                            <a href="#">
+                                                <img class="img-small shrink flex" src="img/salad.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-9 p0 fadeUp">
+                                            <a href="#">
+                                                <h4 class="grey">FOOD</h4>
+                                            </a>
+                                            <p>10 Healthy Eating Tips For People On A Budget!</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-4 flex bottom-article slide-move-left">
+                                        <div class="col-md-3 p0">
+                                            <a href="#">
+                                                <img class="img-small shrink flex" src="img/blonde.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-9 p0 fadeUp">
+                                            <a href="#">
+                                                <h4 class="grey">ART</h4>
+                                            </a>
+                                            <p>Photographer Alice Kate Shares The Secret To Beautiful Shots.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer">
+        <table width="100%;">
+            <tbody>
+                <tr>
+                    <td class="foot-logo">
+                        <h1 class="large-titles white nytimes-header-bottom center">NYT</h1>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/classie.js"></script>
+    <script src="js/custom.js"></script>
+</body>
